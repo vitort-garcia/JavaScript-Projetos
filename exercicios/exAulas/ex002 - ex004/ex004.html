@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro exercício de JS</title>
+    <style>
+        body{
+            background-color: rgb(25, 107, 134);
+            color: white;
+            font: normal 1.8em Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt("Qual é o seu nome?")
+        document.write(`Olá, <strong>${nome}</strong>! O seu nome tem ${nome.length} letras.<br>`)
+        document.write(`O seu nome fica ${nome.toUpperCase()}, quando a gente grita. <br>`)
+        document.write(`E caso queira sussurar: ${nome.toLowerCase()}.`)
+    </script>
+</body>
+</html>

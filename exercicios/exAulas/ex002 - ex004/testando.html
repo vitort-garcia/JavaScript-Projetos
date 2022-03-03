@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro exercício de JS</title>
+    <style>
+        body{
+            background-color: rgb(25, 107, 134);
+            color: white;
+            font: normal 1.8em Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        var salario = Number(window.prompt('Quanto você recebe de salário?'))
+        document.write(`Olá, ${nome}! Parabéns por seu salário de ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.`)
+    </script>
+</body>
+</html>

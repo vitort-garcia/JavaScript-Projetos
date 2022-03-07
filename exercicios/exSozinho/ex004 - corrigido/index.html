@@ -20,11 +20,12 @@
 <body>
     <h1>Trabalhando com Dados v2.0</h1>
     <button onclick="clicou()">Clique para começar</button>
+    <p>O resultado irá aparecer aqui...</p>
     <script>
-        document.write('<p>Aqui vai aparecero resultado...</p>')
         function clicou(){
+            var resultado = document.getElementsByTagName('p')[0]
             var nome = window.prompt('Qual é o seu nome?')
-            window.document.write(`<p>Olá, <strong>${nome}</strong>! É um prazer te conhecer! &#x2764</p>`)
+            resultado.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um prazer te conhecer! &#x2764</p>`
         }
     </script>
 </body>

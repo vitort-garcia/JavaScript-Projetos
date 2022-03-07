@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body{
+            font: normal 12pt arial;
+        }
+
+        button{
+            font: normal 12pt arial;
+            padding: 30px;
+        }
+        p{
+            line-height: 2em;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+    <button>Clique para calcular</button>
+    <p>O resultado vai aparecer aqui...</p>
+
+    <script>
+        document.getElementsByTagName('button')[0].addEventListener('click', clicou)
+        function clicou(){
+            var n1 = Number(window.prompt('Digite um número:'))
+            var paragrafo = window.document.getElementsByTagName('p')[0]
+            paragrafo.innerHTML = `<p>O número a ser analisado aqui será o <strong>${n1}</strong></p>
+            <hr>
+            <p>O seu valor absoluto é ${Math.abs(n1)}
+            <br>
+            A sua parte inteira é ${Number.parseInt(n1)}
+            <br>
+            O valor inteiro mais próximo é o ${Math.round(n1)}
+            <br>
+            A sua raiz quadrada é ${Math.sqrt(n1)}
+            <br>
+            A sua raiz cúbica é ${Math.cbrt(n1)}
+            <br>
+            O valor de ${n1}<sup>2</sup> é ${n1**2}
+            <br>
+            O valor de ${n1}<sup>3</sup> é ${n1**3}
+            </p>`
+        }
+    </script>
+</body>
+</html>

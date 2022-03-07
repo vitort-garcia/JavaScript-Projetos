@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        body{
+            font: normal 12pt arial;
+        }
+        h1{
+            font-family: cursive;
+        }
+        button{
+            font: normal 12pt arial;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador de cliques</h1>
+    <button id="somador">Clique em mim</button>
+    <button id="zerador">Zerar o contador</button>
+    <p>O contador está em <mark>0</mark> cliques</p>
+
+    <script>
+        document.getElementById('somador').addEventListener('click', somou)
+        var somar = 0
+        function somou(){
+            somar = Number(somar)
+            somar += 1
+            window.document.getElementsByTagName('p')[0].innerHTML = `<p>O contador está em <mark>${somar}</mark> cliques</p>`
+        }
+
+        document.getElementById('zerador').addEventListener('click', zerou)
+        function zerou(){
+            somar = 0
+            window.document.getElementsByTagName('p')[0].innerHTML = `<p>O contador está em <mark>${somar}</mark> cliques</p>`
+        }
+    </script>
+</body>
+</html>

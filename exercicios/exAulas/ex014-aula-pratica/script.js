@@ -2,8 +2,9 @@ function carregar(){
     var mensg = document.getElementById('msg')
     var foto = document.getElementById('imagem')
     var hora = new Date().getHours()
-    mensg.innerHTML = `Agora são horas ${hora} horas!`
-    if(hora >= 0 && hora < 12){
+    mensg.innerHTML = `Agora são ${hora} horas!`
+    
+    if(hora >= 5 && hora < 12){
         //Bom Dia
         foto.src = 'manha.png'
         document.body.style.backgroundColor = '#e2cd9f'

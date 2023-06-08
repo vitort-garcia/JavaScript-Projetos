@@ -2,6 +2,8 @@
 Estudos de JavaScript<br>
 Estes são os principais exercícios de JavaScript que fiz até então:
 <br>
-<a href="https://vitort-garcia.github.io/HTML5_CSS3_estudos/Recome%C3%A7o/Desafio_android/index.html" target="_blank">Projeto Android</a>
+<a href="https://vitort-garcia.github.io/JavaScript_estudos/Mini-projetos/horario-do-dia/" target="_blank">Fase do dia</a>
 <br>
-<a href="https://vitort-garcia.github.io/HTML5_CSS3_estudos/Antigos/desafiosindex/des012/index.html" target="_blank">Projeto Cordel</a>
+<a href="https://vitort-garcia.github.io/JavaScript_estudos/Mini-projetos/idade-sexo/" target="_blank">Verificador de Idade</a>
+<br>
+<a href="https://vitort-garcia.github.io/JavaScript_estudos/Mini-projetos/gerar-tabuada/" target="_blank">Gerador de Tabuada</a>

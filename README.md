@@ -1,5 +1,5 @@
 # JavaScript
-Estudos de JavaScript<br>
+Tudo que fiz em JS até então<br>
 Estes são os principais exercícios de JavaScript que fiz até então:
 <br>
 <a href="https://vitort-garcia.github.io/JavaScript_estudos/Mini-projetos/horario-do-dia/" target="_blank">Fase do dia</a>
